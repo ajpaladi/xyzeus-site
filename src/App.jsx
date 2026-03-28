@@ -340,7 +340,7 @@ function Hero() {
 
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.05] mb-6 animate-[fadein_0.7s_0.1s_ease_both]">
-          Type a question.
+          Ask a question.
           <br />
           <span className="text-accent text-glow">See the world answer.</span>
         </h1>
@@ -857,7 +857,7 @@ function CTA() {
         <div className="border-gradient rounded-3xl p-12 glass">
           <span className="text-xs font-mono text-accent tracking-widest uppercase">Get started</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-4 mb-4 tracking-tight leading-tight">
-            Your map is one
+            Your data is one
             <br />
             question away.
           </h2>
