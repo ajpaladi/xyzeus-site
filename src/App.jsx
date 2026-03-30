@@ -65,11 +65,13 @@ const SOURCES_ROW1 = [
   'Overture Maps', 'OpenStreetMap', 'AIS Stream', 'ADS-B Live', 'FEMA Flood Zones',
   'US Census ACS', 'NASA GIBS', 'EIA Power Plants', 'ACLED Conflict', 'Maxar Open Data',
   'Wyvern Hyperspectral', 'Eurostat NUTS', 'OpenTopography', 'USGS Earthquakes',
+  'GDELT News Intelligence', 'PUDL Power Plants', 'ICMM Global Mining',
 ]
 const SOURCES_ROW2 = [
   'Submarine Cables', 'Foursquare Places', 'GeoConfirmed', 'EPA Facilities',
   'ESRI Wayback', 'Sentinel-2 SAR', 'EIA Grid Ops', 'ICMM Mining', 'Strava Segments',
   'USFWS Wetlands', 'NREL Alt Fuel', 'OpenAerialMap', 'Windy Webcams', 'Wikipedia Geo',
+  'US Elections', 'LODES Jobs', 'TNM Elevation', 'GFS Weather',
 ]
 
 // ── Use cases data ─────────────────────────────────────────────────────────────
@@ -164,7 +166,7 @@ const CAPABILITIES = [
       </svg>
     ),
     title: 'Live data, instantly mapped',
-    body:  '55+ integrated sources — satellite imagery, live vessels, aircraft, census data, conflict events, flood zones, and more. Results appear on the map in seconds.',
+    body:  '70+ integrated sources — satellite imagery, live vessels, aircraft, census data, conflict events, flood zones, and more. Results appear on the map in seconds.',
   },
   {
     icon: (
@@ -179,7 +181,7 @@ const CAPABILITIES = [
 
 // ── Stat pills ────────────────────────────────────────────────────────────────
 const STATS = [
-  { value: '55+',    label: 'live data sources' },
+  { value: '70+',    label: 'live data sources' },
   { value: '500M+',  label: 'features on demand' },
   { value: '1 line', label: 'to get started' },
 ]
@@ -335,7 +337,7 @@ function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-accent/20 text-xs font-mono text-accent mb-8 animate-[fadein_0.6s_ease_both]">
           <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse-slow" />
-          Geospatial AI — 55+ live data sources
+          Geospatial AI — 70+ live data sources
         </div>
 
         {/* Headline */}
@@ -347,7 +349,7 @@ function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-dim max-w-2xl mx-auto mb-10 leading-relaxed animate-[fadein_0.7s_0.2s_ease_both]">
-          xyzeus connects natural-language questions to 55+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, and more — mapped in seconds.
+          xyzeus connects natural-language questions to 70+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, and more — mapped in seconds.
         </p>
 
         {/* Prompt mockup */}
@@ -816,7 +818,7 @@ function DataSources() {
           Every source. One interface.
         </h2>
         <p className="text-dim mt-4 text-lg max-w-2xl mx-auto">
-          xyzeus is pre-wired to 55+ live and archival geospatial datasets — no API keys, no data wrangling. Just ask.
+          xyzeus is pre-wired to 70+ live and archival geospatial datasets — no API keys, no data wrangling. Just ask.
         </p>
       </div>
 
@@ -827,7 +829,7 @@ function DataSources() {
 
       {/* Category pills */}
       <div className="max-w-4xl mx-auto px-6 mt-16 reveal">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {[
             { label: 'Maritime & Vessels', icon: '⚓' },
             { label: 'Satellite & Imagery', icon: '🛰' },
@@ -835,6 +837,8 @@ function DataSources() {
             { label: 'Conflict & Security', icon: '🎯' },
             { label: 'Energy Infrastructure', icon: '⚡' },
             { label: 'Climate & Environment', icon: '🌍' },
+            { label: 'Reference & Intelligence', icon: '🗞' },
+            { label: 'Mining & Extraction', icon: '⛏' },
           ].map(({ label, icon }) => (
             <div key={label} className="glass rounded-xl px-4 py-3 flex items-center gap-3 border border-white/5 hover:border-accent/15 transition-colors">
               <span className="text-xl">{icon}</span>
