@@ -66,12 +66,14 @@ const SOURCES_ROW1 = [
   'US Census ACS', 'NASA GIBS', 'EIA Power Plants', 'ACLED Conflict', 'Maxar Open Data',
   'Wyvern Hyperspectral', 'Eurostat NUTS', 'OpenTopography', 'USGS Earthquakes',
   'GDELT News Intelligence', 'PUDL Power Plants', 'ICMM Global Mining',
+  'WDPA Protected Areas', 'RADD Forest Alerts', 'Movebank Animal Tracking',
 ]
 const SOURCES_ROW2 = [
   'Submarine Cables', 'Foursquare Places', 'GeoConfirmed', 'EPA Facilities',
   'ESRI Wayback', 'Sentinel-2 SAR', 'EIA Grid Ops', 'ICMM Mining', 'Strava Segments',
   'USFWS Wetlands', 'NREL Alt Fuel', 'OpenAerialMap', 'Windy Webcams', 'Wikipedia Geo',
   'US Elections', 'LODES Jobs', 'TNM Elevation', 'GFS Weather',
+  'GFW Key Biodiversity Areas', 'Tree Cover Loss', 'AODN Wave Buoys', 'Endemic Bird Areas',
 ]
 
 // ── Use cases data ─────────────────────────────────────────────────────────────
@@ -166,7 +168,7 @@ const CAPABILITIES = [
       </svg>
     ),
     title: 'Live data, instantly mapped',
-    body:  '70+ integrated sources — satellite imagery, live vessels, aircraft, census data, conflict events, flood zones, and more. Results appear on the map in seconds.',
+    body:  '80+ integrated sources — satellite imagery, live vessels, aircraft, census data, conflict events, flood zones, and more. Results appear on the map in seconds.',
   },
   {
     icon: (
@@ -181,7 +183,7 @@ const CAPABILITIES = [
 
 // ── Stat pills ────────────────────────────────────────────────────────────────
 const STATS = [
-  { value: '70+',    label: 'live data sources' },
+  { value: '80+',    label: 'live data sources' },
   { value: '500M+',  label: 'features on demand' },
   { value: '1 line', label: 'to get started' },
 ]
@@ -337,7 +339,7 @@ function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-accent/20 text-xs font-mono text-accent mb-8 animate-[fadein_0.6s_ease_both]">
           <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse-slow" />
-          Geospatial AI — 70+ live data sources
+          Geospatial AI — 80+ live data sources
         </div>
 
         {/* Headline */}
@@ -349,7 +351,7 @@ function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-dim max-w-2xl mx-auto mb-10 leading-relaxed animate-[fadein_0.7s_0.2s_ease_both]">
-          xyzeus connects natural-language questions to 70+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, and more — mapped in seconds.
+          xyzeus connects natural-language questions to 80+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, and more — mapped in seconds.
         </p>
 
         {/* Prompt mockup */}
@@ -818,7 +820,7 @@ function DataSources() {
           Every source. One interface.
         </h2>
         <p className="text-dim mt-4 text-lg max-w-2xl mx-auto">
-          xyzeus is pre-wired to 70+ live and archival geospatial datasets — no API keys, no data wrangling. Just ask.
+          xyzeus is pre-wired to 80+ live and archival geospatial datasets — no API keys, no data wrangling. Just ask.
         </p>
       </div>
 
