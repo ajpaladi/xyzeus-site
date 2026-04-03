@@ -73,7 +73,7 @@ const SOURCES_ROW2 = [
   'ESRI Wayback', 'Sentinel-2 SAR', 'EIA Grid Ops', 'ICMM Mining', 'Strava Segments',
   'USFWS Wetlands', 'NREL Alt Fuel', 'OpenAerialMap', 'Windy Webcams', 'Wikipedia Geo',
   'US Elections', 'LODES Jobs', 'TNM Elevation', 'GFS Weather',
-  'GFW Key Biodiversity Areas', 'Tree Cover Loss', 'AODN Wave Buoys', 'Endemic Bird Areas',
+  'GFW Key Biodiversity Areas', 'Tree Cover Loss', 'NDBC Wave Buoys', 'Endemic Bird Areas',
 ]
 
 // ── Use cases data ─────────────────────────────────────────────────────────────
