@@ -170,7 +170,7 @@ const CAPABILITIES = [
       </svg>
     ),
     title: 'Live data, instantly mapped',
-    body:  '90+ integrated sources — satellite imagery, live vessels, aircraft, census data, conflict events, flood zones, dam infrastructure, World Bank indicators, and more. Results appear on the map in seconds.',
+    body:  '90+ integrated sources — satellite imagery, live vessels, aircraft, census data, conflict events, flood zones, and more. Results appear on the map in seconds.',
   },
   {
     icon: (
@@ -353,7 +353,7 @@ function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-dim max-w-2xl mx-auto mb-10 leading-relaxed animate-[fadein_0.7s_0.2s_ease_both]">
-          xyzeus connects natural-language questions to 90+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, dams, levees, World Bank indicators, and more — mapped in seconds.
+          xyzeus connects natural-language questions to 90+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, and more — mapped in seconds.
         </p>
 
         {/* Prompt mockup */}
