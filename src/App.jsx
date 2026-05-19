@@ -292,19 +292,20 @@ function Nav() {
 
         {/* Nav links */}
         <nav className="hidden md:flex items-center gap-8 text-sm">
-          {isHome && HOME_SECTION_LINKS.map(({ href, label }) => {
-            const active = activeSection === href.slice(1)
+          {HOME_SECTION_LINKS.map(({ href, label }) => {
+            const active = isHome && activeSection === href.slice(1)
+            const dest = isHome ? href : `/${href}`
             return (
               <a
                 key={href}
-                href={href}
+                href={dest}
                 className={`transition-colors ${active ? 'text-accent font-medium' : 'text-dim hover:text-white'}`}
               >
                 {label}
               </a>
             )
           })}
-          {isHome && <span className="w-px h-4 bg-white/10" />}
+          <span className="w-px h-4 bg-white/10" />
           {PAGE_LINKS.map(({ to, label }) => {
             const active = location.pathname === to
             return (
