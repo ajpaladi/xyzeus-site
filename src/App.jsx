@@ -246,6 +246,8 @@ function ScreenshotCard({ img, prompt, label, className = '' }) {
 // ── Nav ───────────────────────────────────────────────────────────────────────
 const HOME_SECTION_LINKS = [
   { href: '#how-it-works', label: 'How it works' },
+  { href: '#intelligence', label: 'Analysis' },
+  { href: '#dossier',      label: 'Dossier' },
   { href: '#use-cases',    label: 'Use cases' },
 ]
 
