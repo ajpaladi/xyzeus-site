@@ -278,9 +278,9 @@ function Nav() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2.5 group">
-          <img src="/images/logo.png" alt="xyzeus" className="w-8 h-8 rounded-lg" />
+          <img src="/images/logo.jpg" alt="Agentic Earth" className="w-8 h-8 rounded-lg" />
           <span className="font-bold text-lg tracking-tight text-white group-hover:text-accent transition-colors">
-            xyzeus
+            Agentic Earth
           </span>
         </a>
 
@@ -303,7 +303,7 @@ function Nav() {
 
         {/* CTA */}
         <a
-          href="https://xyzeus.app"
+          href="https://agenticearth.app"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 rounded-lg bg-accent text-[#080810] text-sm font-semibold hover:bg-white transition-colors"
@@ -353,7 +353,7 @@ function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-dim max-w-2xl mx-auto mb-10 leading-relaxed animate-[fadein_0.7s_0.2s_ease_both]">
-          xyzeus connects natural-language questions to 90+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, and more — mapped in seconds.
+          Agentic Earth connects natural-language questions to 90+ live geospatial data sources — vessels, satellites, buildings, borders, weather, conflict, and more — mapped in seconds.
         </p>
 
         {/* Prompt mockup */}
@@ -374,7 +374,7 @@ function Hero() {
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-[fadein_0.7s_0.4s_ease_both]">
           <a
-            href="https://xyzeus.app"
+            href="https://agenticearth.app"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3.5 rounded-xl bg-accent text-[#080810] font-bold text-base hover:bg-white transition-all hover:scale-[1.02] active:scale-[0.98]"
@@ -459,7 +459,7 @@ const DOSSIER_FEATURES = [
   {
     icon: '⊞',
     title: '11 datasets, one prompt',
-    body: 'xyzeus pulls from every relevant source simultaneously — SAR imagery, building footprints, GeoConfirmed OSINT, power infrastructure, military airports, Wikipedia — and integrates them into a single coherent picture.',
+    body: 'Agentic Earth pulls from every relevant source simultaneously — SAR imagery, building footprints, GeoConfirmed OSINT, power infrastructure, military airports, Wikipedia — and integrates them into a single coherent picture.',
   },
   {
     icon: '◈',
@@ -488,7 +488,7 @@ function DossierSection() {
             <span className="text-accent text-glow">to intelligence dossier.</span>
           </h2>
           <p className="text-dim mt-4 text-lg max-w-2xl mx-auto">
-            Ask a question. xyzeus fetches the data, runs the analysis, and generates a publication-ready report — complete with maps, datasets, and cross-referenced findings.
+            Ask a question. Agentic Earth fetches the data, runs the analysis, and generates a publication-ready report — complete with maps, datasets, and cross-referenced findings.
           </p>
         </div>
 
@@ -507,7 +507,7 @@ function DossierSection() {
                 <div className="flex items-center gap-2 mb-4">
                   <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-black/40 uppercase">Dossier</span>
                   <span className="text-black/20">·</span>
-                  <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-black/40 uppercase">xyzeus</span>
+                  <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-black/40 uppercase">Agentic Earth</span>
                 </div>
                 <h3 className="text-xl font-bold text-black/85 leading-snug mb-4" style={{ fontFamily: 'Georgia, serif' }}>
                   Kharg Island Situational Report —<br />
@@ -555,9 +555,9 @@ function DossierSection() {
 
               {/* CTA row */}
               <div className="px-8 py-5 flex items-center justify-between bg-black/[0.03]">
-                <span className="text-xs text-black/40 font-mono">xyzeus.app/report/380ac2be3a44</span>
+                <span className="text-xs text-black/40 font-mono">agenticearth.io/report/380ac2be3a44</span>
                 <a
-                  href="https://xyzeus.app/report/380ac2be3a44"
+                  href="https://agenticearth.app/report/380ac2be3a44"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-semibold text-black/60 hover:text-black/85 transition-colors flex items-center gap-1"
@@ -625,7 +625,7 @@ const ANALYSIS_POINTS = [
   {
     icon: '◈',
     title: 'Multi-source correlation',
-    body:  'xyzeus pulls from multiple datasets simultaneously and cross-references them — finding patterns no single source could reveal.',
+    body:  'Agentic Earth pulls from multiple datasets simultaneously and cross-references them — finding patterns no single source could reveal.',
   },
   {
     icon: '⚡',
@@ -658,7 +658,7 @@ function Intelligence() {
             <span className="text-accent text-glow">An analyst.</span>
           </h2>
           <p className="text-dim mt-4 text-lg max-w-2xl mx-auto">
-            xyzeus doesn't stop at fetching data. It reads it, cross-references it, and tells you what it means — in plain language.
+            Agentic Earth doesn't stop at fetching data. It reads it, cross-references it, and tells you what it means — in plain language.
           </p>
         </div>
 
@@ -669,7 +669,7 @@ function Intelligence() {
           <div className="relative rounded-2xl overflow-hidden screenshot-glow">
             <img
               src="/images/maui.png"
-              alt="xyzeus flood intelligence brief"
+              alt="Agentic Earth flood intelligence brief"
               className="w-full object-cover"
               loading="lazy"
             />
@@ -735,7 +735,7 @@ function UseCases() {
             One prompt. Any dataset.
           </h2>
           <p className="text-dim mt-4 text-lg max-w-xl mx-auto">
-            From classified-facility OSINT to real-time flood monitoring — if the data exists, xyzeus can find it.
+            From classified-facility OSINT to real-time flood monitoring — if the data exists, Agentic Earth can find it.
           </p>
         </div>
 
@@ -822,7 +822,7 @@ function DataSources() {
           Every source. One interface.
         </h2>
         <p className="text-dim mt-4 text-lg max-w-2xl mx-auto">
-          xyzeus is pre-wired to 90+ live and archival geospatial datasets — no API keys, no data wrangling. Just ask.
+          Agentic Earth is pre-wired to 90+ live and archival geospatial datasets — no API keys, no data wrangling. Just ask.
         </p>
       </div>
 
@@ -875,12 +875,12 @@ function CTA() {
             No setup. No GIS software. No learning curve. Sign in and start asking.
           </p>
           <a
-            href="https://xyzeus.app"
+            href="https://agenticearth.app"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-10 py-4 rounded-xl bg-accent text-[#080810] font-bold text-lg hover:bg-white transition-all hover:scale-[1.02] active:scale-[0.98] glow-accent"
           >
-            Try xyzeus free
+            Try Agentic Earth free
             <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
               <path fillRule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clipRule="evenodd" />
             </svg>
@@ -898,17 +898,17 @@ function Footer() {
     <footer className="border-t border-white/5 py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2.5">
-          <img src="/images/logo.png" alt="xyzeus" className="w-6 h-6 rounded-md opacity-80" />
-          <span className="text-sm font-semibold text-white/60">xyzeus</span>
+          <img src="/images/logo.jpg" alt="Agentic Earth" className="w-6 h-6 rounded-md opacity-80" />
+          <span className="text-sm font-semibold text-white/60">Agentic Earth</span>
         </div>
-        <p className="text-xs text-dim/50 font-mono">© 2026 xyzeus. All rights reserved.</p>
+        <p className="text-xs text-dim/50 font-mono">© 2026 Agentic Earth. All rights reserved.</p>
         <a
-          href="https://xyzeus.app"
+          href="https://agenticearth.app"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs text-accent/70 hover:text-accent transition-colors font-mono"
         >
-          xyzeus.app →
+          agenticearth.app →
         </a>
       </div>
     </footer>
