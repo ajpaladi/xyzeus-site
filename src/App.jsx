@@ -1,4 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { Routes, Route, Link, useLocation } from 'react-router-dom'
+import DevelopersPage from './pages/DevelopersPage.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
+import ProjectsPage from './pages/ProjectsPage.jsx'
 
 // ── Scroll reveal hook ────────────────────────────────────────────────────────
 function useReveal() {
@@ -240,25 +244,28 @@ function ScreenshotCard({ img, prompt, label, className = '' }) {
 }
 
 // ── Nav ───────────────────────────────────────────────────────────────────────
-const NAV_LINKS = [
-  { href: '#how-it-works',  label: 'How it works' },
-  { href: '#intelligence',  label: 'Intelligence' },
-  { href: '#dossier',       label: 'Dossier' },
-  { href: '#use-cases',     label: 'Use cases' },
-  { href: '#sources',       label: 'Data sources' },
+const HOME_SECTION_LINKS = [
+  { href: '#how-it-works', label: 'How it works' },
+  { href: '#use-cases',    label: 'Use cases' },
+]
+
+const PAGE_LINKS = [
+  { to: '/developers', label: 'Developers' },
+  { to: '/products',   label: 'Products' },
+  { to: '/projects',   label: 'About' },
 ]
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('')
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
-    const ids = NAV_LINKS.map(l => l.href.slice(1))
-
+    if (!isHome) { setScrolled(true); return }
+    const ids = HOME_SECTION_LINKS.map(l => l.href.slice(1))
     const onScroll = () => {
       setScrolled(window.scrollY > 40)
-
-      // Find the last section whose top is above the middle of the viewport
       const mid = window.scrollY + window.innerHeight * 0.4
       let current = ''
       for (const id of ids) {
@@ -267,28 +274,26 @@ function Nav() {
       }
       setActiveSection(current)
     }
-
     window.addEventListener('scroll', onScroll, { passive: true })
     onScroll()
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [isHome])
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass border-b border-white/5' : ''}`}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2.5 group">
+        <Link to="/" className="flex items-center gap-2.5 group">
           <img src="/images/logo.jpg" alt="Agentic Earth" className="w-8 h-8 rounded-lg" />
           <span className="font-bold text-lg tracking-tight text-white group-hover:text-accent transition-colors">
             Agentic Earth
           </span>
-        </a>
+        </Link>
 
         {/* Nav links */}
         <nav className="hidden md:flex items-center gap-8 text-sm">
-          {NAV_LINKS.map(({ href, label }) => {
-            const id = href.slice(1)
-            const active = activeSection === id
+          {isHome && HOME_SECTION_LINKS.map(({ href, label }) => {
+            const active = activeSection === href.slice(1)
             return (
               <a
                 key={href}
@@ -297,6 +302,19 @@ function Nav() {
               >
                 {label}
               </a>
+            )
+          })}
+          {isHome && <span className="w-px h-4 bg-white/10" />}
+          {PAGE_LINKS.map(({ to, label }) => {
+            const active = location.pathname === to
+            return (
+              <Link
+                key={to}
+                to={to}
+                className={`transition-colors ${active ? 'text-accent font-medium' : 'text-dim hover:text-white'}`}
+              >
+                {label}
+              </Link>
             )
           })}
         </nav>
@@ -915,13 +933,11 @@ function Footer() {
   )
 }
 
-// ── Root ──────────────────────────────────────────────────────────────────────
-export default function App() {
+// ── Homepage ──────────────────────────────────────────────────────────────────
+function HomePage() {
   useReveal()
-
   return (
-    <div className="min-h-screen bg-surface text-white">
-      <Nav />
+    <>
       <Hero />
       <StatsStrip />
       <HowItWorks />
@@ -930,6 +946,21 @@ export default function App() {
       <UseCases />
       <DataSources />
       <CTA />
+    </>
+  )
+}
+
+// ── Root ──────────────────────────────────────────────────────────────────────
+export default function App() {
+  return (
+    <div className="min-h-screen bg-surface text-white">
+      <Nav />
+      <Routes>
+        <Route path="/"           element={<HomePage />} />
+        <Route path="/developers" element={<DevelopersPage />} />
+        <Route path="/products"   element={<ProductsPage />} />
+        <Route path="/projects"   element={<ProjectsPage />} />
+      </Routes>
       <Footer />
     </div>
   )
