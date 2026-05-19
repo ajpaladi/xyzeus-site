@@ -35,11 +35,11 @@ body {
 
 /* Glow utilities */
 .glow-accent {
-  box-shadow: 0 0 40px rgba(196, 164, 107, 0.25), 0 0 80px rgba(196, 164, 107, 0.10);
+  box-shadow: 0 0 40px rgba(212, 168, 67, 0.25), 0 0 80px rgba(212, 168, 67, 0.10);
 }
 
 .text-glow {
-  text-shadow: 0 0 40px rgba(196, 164, 107, 0.55);
+  text-shadow: 0 0 40px rgba(212, 168, 67, 0.55);
 }
 
 /* Noise texture overlay */
@@ -63,9 +63,9 @@ body {
 /* Screenshot frame glow */
 .screenshot-glow {
   box-shadow:
-    0 0 0 1px rgba(196, 164, 107, 0.15),
+    0 0 0 1px rgba(212, 168, 67, 0.15),
     0 24px 80px rgba(0, 0, 0, 0.7),
-    0 0 60px rgba(196, 164, 107, 0.07);
+    0 0 60px rgba(212, 168, 67, 0.07);
 }
 
 /* Marquee pause on hover */

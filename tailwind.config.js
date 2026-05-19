@@ -10,12 +10,12 @@ export default {
       colors: {
         surface: '#080810',
         panel:   '#0d0d18',
-        accent:  '#c4a46b',
+        accent:  '#d4a843',
         dim:     '#8a8070',
       },
       backgroundImage: {
-        'radial-accent': 'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(196,164,107,0.13) 0%, transparent 70%)',
-        'radial-mid':    'radial-gradient(ellipse 60% 50% at 80% 60%, rgba(196,164,107,0.07) 0%, transparent 60%)',
+        'radial-accent': 'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(212,168,67,0.13) 0%, transparent 70%)',
+        'radial-mid':    'radial-gradient(ellipse 60% 50% at 80% 60%, rgba(212,168,67,0.07) 0%, transparent 60%)',
       },
       animation: {
         'marquee':  'marquee 32s linear infinite',
